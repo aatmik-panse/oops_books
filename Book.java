@@ -1,16 +1,15 @@
 package bookrepo;
 
-
 public class Book {
     public String title;
     public String author;
     public float userRating;
-    public String reviews;
+    public int reviews; 
     public String genre;
     public int year;
     public float price;
 
-    public Book(String title, String author, float userRating, String reviews, String genre, int year, float price) {
+    public Book(String title, String author, float userRating, int reviews, String genre, int year, float price) {
         this.title = title;
         this.author = author;
         this.userRating = userRating;
@@ -44,11 +43,11 @@ public class Book {
         this.userRating = userRating;
     }
 
-    public String getReviews() {
+    public int getReviews() {
         return reviews;
     }
 
-    public void setReviews(String reviews) {
+    public void setReviews(int reviews) {
         this.reviews = reviews;
     }
 
